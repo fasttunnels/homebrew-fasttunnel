@@ -5,21 +5,21 @@
 class Fasttunnel < Formula
   desc "Open-source tunneling — expose local services to the internet instantly."
   homepage "https://fasttunnel.dev"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/fasttunnels/fasttunnel/releases/download/v0.1.2/fasttunnel_0.1.2_darwin_amd64.tar.gz"
-      sha256 "2a2fe845e09781fc80641e97baca0e2aafa26b2a28137ea4afa262457f9db6f3"
+      url "https://github.com/fasttunnels/fasttunnel/releases/download/v0.1.3/fasttunnel_0.1.3_darwin_amd64.tar.gz"
+      sha256 "b9c7ae31fdfeddbba7ed405b930e83a55a797e7b252a31b9d2342cc9355da6e0"
 
       define_method(:install) do
         bin.install "fasttunnel"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/fasttunnels/fasttunnel/releases/download/v0.1.2/fasttunnel_0.1.2_darwin_arm64.tar.gz"
-      sha256 "c3caeb8adfcf16b68eca82c2fbfd2d0043ebcda1938b377837d44e3ef28d086f"
+      url "https://github.com/fasttunnels/fasttunnel/releases/download/v0.1.3/fasttunnel_0.1.3_darwin_arm64.tar.gz"
+      sha256 "cde94c7b5d669e942252119f65d6463ae5da6f54e7303f7bd167d1ecc68b7566"
 
       define_method(:install) do
         bin.install "fasttunnel"
@@ -29,15 +29,15 @@ class Fasttunnel < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fasttunnels/fasttunnel/releases/download/v0.1.2/fasttunnel_0.1.2_linux_amd64.tar.gz"
-      sha256 "7444fb3c638fedb20c5f2af21cc5d93ee32c0106ce3b343ae25c29ca9863a7c0"
+      url "https://github.com/fasttunnels/fasttunnel/releases/download/v0.1.3/fasttunnel_0.1.3_linux_amd64.tar.gz"
+      sha256 "5759d8672e2377bd407633c82d63d3761c0f7bdb237ae4e445a2f07c4220f21b"
       define_method(:install) do
         bin.install "fasttunnel"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fasttunnels/fasttunnel/releases/download/v0.1.2/fasttunnel_0.1.2_linux_arm64.tar.gz"
-      sha256 "a948a4345fc5566b87cc3e2d5a2196e8505622ba678fa76806349d0a22ced176"
+      url "https://github.com/fasttunnels/fasttunnel/releases/download/v0.1.3/fasttunnel_0.1.3_linux_arm64.tar.gz"
+      sha256 "4b49105c65f798ac68ed8c221d92462e16aeb9a87339dc641c8a854d968e3884"
       define_method(:install) do
         bin.install "fasttunnel"
       end
