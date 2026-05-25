@@ -11,7 +11,7 @@ class Fasttunnel < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/fasttunnels/fasttunnel/releases/download/v0.2.0/fasttunnel_0.2.0_darwin_amd64.tar.gz"
-      sha256 "1543f3a2539e6ffd357e57876e0885dbd643f6a97cac18b57923df1b11190fc9"
+      sha256 "9a84e18b18fcf815c5c6cc339c6df5bdcd81b353a7b474006b5ca5a36eda824a"
 
       define_method(:install) do
         bin.install "fasttunnel"
@@ -19,7 +19,7 @@ class Fasttunnel < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/fasttunnels/fasttunnel/releases/download/v0.2.0/fasttunnel_0.2.0_darwin_arm64.tar.gz"
-      sha256 "06014ba5aa92aa2024660662f734af2499eb7cc892caf6bc84f4ef5533a0ebc5"
+      sha256 "ee1cee15b2764c3bcb1bb208e99c3fca455bdb2c5dae524e3f58e0360315af56"
 
       define_method(:install) do
         bin.install "fasttunnel"
@@ -30,14 +30,14 @@ class Fasttunnel < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/fasttunnels/fasttunnel/releases/download/v0.2.0/fasttunnel_0.2.0_linux_amd64.tar.gz"
-      sha256 "145656bde3552abbee082be19ca7168d224a451bed344e26d6e0272e1366aaff"
+      sha256 "acb660e47276bf9dde7cc9c61d4b1f73f82042cfad65c98b78cca678a4bcc846"
       define_method(:install) do
         bin.install "fasttunnel"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/fasttunnels/fasttunnel/releases/download/v0.2.0/fasttunnel_0.2.0_linux_arm64.tar.gz"
-      sha256 "c0ed5bbbe7e8ac96595c248eb2243c9592815fae0ed430f8f42ccec669403050"
+      sha256 "4e1e21a9e7dfb12c6760ae379dce5053c712d05cd1a0bb6a09d394d7e0012e87"
       define_method(:install) do
         bin.install "fasttunnel"
       end
